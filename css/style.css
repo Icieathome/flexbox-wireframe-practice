@@ -1,17 +1,20 @@
 .flexbox-container {
-    height: 100vh;
-    width: 100vh;
-    background-color: antiquewhite;
+    background-color: grey;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+    border: 2px solid;
+    height: 100vh;
+    width: 100vh;
     
 }
 .flexbox-item  {
     height: 15vh;
     width: 50vh;
-    border: 2px solid black;
+    border: 2px solid rgb(219, 12, 116);
     background-color: rgb(219, 12, 116);
     color: white;
     font-size: 2em;
@@ -20,7 +23,7 @@
 .flexbox-header {
     height: 15vh;
     width: 50vh;
-    border: 2px solid black;
+    border: 2px solid rgb(87, 12, 53);
     background-color: rgb(87, 12, 53);
     color: white;
     font-size: 2em;
@@ -30,7 +33,7 @@
 .flexbox-aside {
     height: 15vh;
     width: 50vh;
-    border: 2px solid black;
+    border: 2px solid rgb(59, 59, 160);
     background-color: rgb(59, 59, 160);
     color: white;
     font-size: 2em;
@@ -40,7 +43,7 @@
 .flexbox-footer {
     height: 15vh;
     width: 50vh;
-    border: 2px solid black;
+    border: 2px solid rgb(204, 116, 15);
     background-color: rgb(204, 116, 15);
     color: white;
     font-size: 2em;
@@ -51,18 +54,19 @@
     height: 55vh;
     width: 50vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: stretch;
-    border: 2px solid black;
+    border: 2px solid rgb(12, 190, 86);
     padding: 10px;
     flex-direction: column;
     background-color: rgb(12, 190, 86);
+    gap: 5px;
 }
 .articles-container article {
     flex: 1;
     padding: 20px;
     margin: 0 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(219, 12, 116);
     background-color: rgb(219, 12, 116);
     color: white;
     font-size: 2em;
