@@ -1,4 +1,4 @@
-.flexbox-container {
+.container {
     background-color: grey;
     display: flex;
     justify-content: space-around;
@@ -23,7 +23,7 @@
     flex: 1 1 calc(50% - 10px);
     box-sizing: border-box;
 }
-.flexbox-header {
+.header {
     width: 90%;
     min-height: 6rem;
     border: 2px solid rgb(87, 12, 53);
@@ -32,7 +32,7 @@
     font-size: 2em;
     text-align: center;
 }
-.flexbox-aside {
+.aside {
     width: 90%;
     height: 15vh;
     border: 2px solid rgb(59, 59, 160);
@@ -42,7 +42,7 @@
     text-align: center;
 
 }
-.flexbox-footer {
+.footer {
     width: 90%;
     height: 15vh;
     border: 2px solid rgb(204, 116, 15);
@@ -58,20 +58,37 @@
     height: 55vh;
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
     border: 2px solid rgb(12, 190, 86);
     padding: 10px;
     flex-direction: column;
     background-color: rgb(12, 190, 86);
     gap: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
 }
 @media (max-width: 900px){
     .articles-container {
         flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
     }
+    .header {
+        flex-basis: 100%;
+    }
+    .footer {
+        flex-basis: 100%;
+    }
+    .aside {
+        flex-basis: 25%;
+    }
+
+
 }
-.articles-container article {
+.column {
     width:auto;
     margin: 0 5px;
     border: 2px solid rgb(219, 12, 116);
